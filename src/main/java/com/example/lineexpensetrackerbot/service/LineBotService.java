@@ -172,7 +172,7 @@ public class LineBotService {
         Box body = Box.builder()
                 .layout(FlexLayout.VERTICAL)
                 .contents(List.of(
-                        Text.builder().text("📝 第 " + index + " 筆").weight(TextWeight.BOLD).build(),
+                		Text.builder().text("📝 第 " + index + " 筆").weight(Text.TextWeight.BOLD).build(),
                         Text.builder().text("📅 日期: " + date).build(),
                         Text.builder().text("📝 項目: " + item).build(),
                         Text.builder().text("💰 金額: " + amount).build(),
