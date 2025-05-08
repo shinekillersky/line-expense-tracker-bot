@@ -1,0 +1,7 @@
+# .nixpack.toml
+[build]
+builder = "NIXPACKS"
+buildCommand = "./mvnw package"
+
+[deploy]
+startCommand = "java -jar target/*.jar"
