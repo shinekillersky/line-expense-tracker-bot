@@ -22,7 +22,6 @@ public class LineBotController {
 
     @EventMapping
     public void handleTextMessageEvent(MessageEvent<TextMessageContent> event) {
-    	System.out.println("✅ 收到訊息：" + event.getMessage().getText());
         log.info("收到訊息事件：{}", event.getMessage().getText());
         lineBotService.handleTextMessage(event);
     }
